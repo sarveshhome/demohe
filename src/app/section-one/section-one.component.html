@@ -1,62 +1,74 @@
 <section class="job-form-section job-form-section--image">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 col-lg-offset-2">
-        <div class="job-form-box">
-          <h2 class="heading">Find an <span class="accent">Equipment</span>.</h2>
-          <form id="job-main-form" method="get" action="#" class="job-main-form">
-            <div class="controls">
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="form-group">
-                    <label for="profession">City</label>
-                    <!--<input type="text" id="profession" name="profession" placeholder="Profession you are looking for" class="form-control">-->
-                      <div class="form-group">
-                          <select class="form-control" id="sel1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-2">
+                <div class="job-form-box">
+                    <h2 class="heading">Find an <span class="accent">Equipment</span>.</h2>
+                    <form id="job-main-form" method="get" action="#" class="job-main-form">
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="profession">City</label>
+                                        <!--<input type="text" id="profession" name="profession" placeholder="Profession you are looking for" class="form-control">-->
+                                        <div class="form-group">
+                                            <!--<select class="form-control" id="sel1">
                             <option>Florida</option>
                             <option>New Delhi</option>
                             <option>Mumbai</option>
                             <option>Kolkatta</option>
-                          </select>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                  <div class="form-group">
-                    <label for="location">Area</label>
-                    <!--<input type="text" id="location" name="location" placeholder="Any particular location?" class="form-control">-->
-                      <div class="form-group">
-                          <select class="form-control" id="sel2">
+                          </select>-->
+                                            <select [(ngModel)]="selectedCity.id" class="form-control" (change)="onSelect($event.target.value)">
+    <option value="0">--Select City--</option>
+    <option *ngFor="let cityss of cities" value={{cityss.id}}>{{cityss.name}}</option>
+</select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <label for="location">Area</label>
+                                        <!--<input type="text" id="location" name="location" placeholder="Any particular location?" class="form-control">-->
+                                        <div class="form-group">
+                                            <!--<select class="form-control" id="sel2">
                             <option>Area 1</option>
                             <option>Area 2</option>
                             <option>Area 3</option>
                             <option>Area 4</option>
-                          </select>
-                      </div>
-                  </div>
-                </div>
-                  <div class="col-sm-3">
-                  <div class="form-group">
-                    <label for="location">Item</label>
-                    <!--<input type="text" id="location" name="location" placeholder="Any particular location?" class="form-control">-->
-                      <div class="form-group">
-                          <select class="form-control" id="sel3">
+                          </select>-->
+                                            <select [(ngModel)]="selectedArea.id" class="form-control" (change)="onSelectArea($event.target.value)">
+        <option  value="0">--Select Area--</option>
+        <option *ngFor="let areasss of areas " value={{areasss.id}}>{{areasss.name}}</option>
+    </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <label for="location">Item</label>
+                                        <!--<input type="text" id="location" name="location" placeholder="Any particular location?" class="form-control">-->
+                                        <div class="form-group">
+                                            <!--<select class="form-control" id="sel3">
                             <option>Item 1</option>
                             <option>Item 2</option>
                             <option>Item 3</option>
                             <option>Item 4</option>
-                          </select>
-                      </div>
-                  </div>
+                          </select>-->
+                                            <select class="form-control">
+       <option  value="0">--Select Item</option>
+       <option *ngFor="let itemsss of items" value={{itemsss.id}}>{{itemsss.name}}</option>
+   </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 search-btn">
+                                    <button type="submit" name="submit" class="btn btn-primary job-main-form__button"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-sm-2 search-btn">
-                  <button type="submit" name="submit" class="btn btn-primary job-main-form__button"><i class="fa fa-search"></i></button>
-                </div>
-              </div>
             </div>
-          </form>
         </div>
-      </div>
     </div>
-  </div>
 </section>
