@@ -1,0 +1,14 @@
+/**** Global Css ****/
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading:after {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin: 20px auto 20px;
+    background: #ff7473;
+}

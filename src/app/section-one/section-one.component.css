@@ -1,0 +1,63 @@
+.job-form-section.job-form-section--image {
+    background: center center url(/assets/images/vanwayLinearCrushers.jpg) no-repeat;
+    background-size: cover;
+}
+.job-form-section {
+    padding: 80px 0;
+    background: #fafafa;
+}
+section {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.col-sm-2.search-btn {
+    padding-top: 25px;
+}
+.btn-primary {
+    color: #ff7473;
+    background-color: #fff;
+    border-color: #ff7473;
+}
+.btn {
+    font-weight: 700;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.55;
+    border-radius: 0;
+}
+.job-main-form__button {
+    display: block;
+    width: 100%;
+}
+.job-form-box {
+    background-color: rgba(255,255,255,0.8);
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.accent {
+    color: #ff7473;
+}
+.job-form-section .job-main-form {
+    margin-bottom: 40px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.job-form-section .job-main-form label {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-left: 10px;
+}
+.col-lg-offset-2 {
+    /* margin-left: 16.66666667%; */
+    /* margin: 0 auto; */
+    position: relative;
+    left: -9%;
+    /* right: 50%; */
+    /* top: 50%; */
+}
