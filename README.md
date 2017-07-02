@@ -1,10 +1,14 @@
+
+
 # HE
 on Node.js command prompt
 
-step 1: npm install
+step 1 :  npm install -g @angular/cli
+
+step 2: npm install
 
 
-Step 2: ng serve --open
+Step 3: ng serve --open
 
 
 ## Development server
